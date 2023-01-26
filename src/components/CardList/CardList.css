@@ -1,0 +1,75 @@
+.card-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 13px;
+}
+
+.card-client-search__container {
+  z-index: 1;
+  padding: 21px 30px 20px;
+  max-width: 289px;
+}
+
+.card-client-search__form {
+  position: relative;
+}
+
+.card-client-search__input {
+  min-height: 46px;
+  max-width: 289px;
+  width: 100%;
+  border-radius: 9px;
+  border: 1px solid #cecece;
+  padding-left: 10px;
+}
+
+.card-client-search__button {
+  width: 48px;
+  height: 34px;
+  top: 18px;
+  right: 0;
+  position: absolute;
+  border-radius: 48px;
+  background: none;
+  border: none;
+}
+
+.card-client-search__button:hover {
+  cursor: pointer;
+}
+
+.card-client-search__button-pic {
+  margin: auto;
+  display: block;
+}
+
+.card-client-search__checkbox-tittle {
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-right: 14px;
+}
+
+.card-list__text {
+  font-size: 20px;
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+
+input[type="search"]::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2727275788784027px;
+  padding-top: 13px;
+  padding-left: 7px;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}

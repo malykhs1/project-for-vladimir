@@ -1,0 +1,16 @@
+.header {
+  padding: 10px 9.653vw 0;
+}
+
+.header__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    padding: 64px 3.653vw 46px;
+  }
+}

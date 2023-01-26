@@ -1,0 +1,14 @@
+.card-client-container {
+  background: white;
+  margin: 10px 9.653vw 0;
+  border: 1px solid #ddedf4;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 550px) {
+  .card-client-container {
+    margin: 64px 3.653vw 0;
+  }
+}

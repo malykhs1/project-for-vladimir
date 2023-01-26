@@ -1,0 +1,7 @@
+@import url(../src/vendor/normalize.css);
+@import url(../src/vendor/fonts.css);
+@import url(../src/components/app/App.css);
+@import url(../src/components/Header/Header.css);
+@import url(components/MainSeacrhApp/MainSearchApp.css);
+@import url(components/Card/Card.css);
+@import url(components/CardList/CardList.css);
