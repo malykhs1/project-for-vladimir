@@ -21,6 +21,5 @@ class ApiCustomer {
 }
 
 export const apiCustomer = new ApiCustomer({
-  // url: 'https://api.nomoreparties.co/beatfilm-movies',
   url: "https:/api.mocki.io/v2/6ade65a4",
 });
