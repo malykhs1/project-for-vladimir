@@ -126,7 +126,7 @@
   border-radius: 6px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   .main-search-container {
     align-items: center;
   }
@@ -135,6 +135,9 @@
     justify-content: center;
   }
 
+  .card-client-search__container {
+    margin: auto;
+  }
   .card-client-search {
     min-width: 350px;
   }
