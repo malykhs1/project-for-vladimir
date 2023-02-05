@@ -13,7 +13,7 @@ export const ClientCard = ({ card }) => {
     if (card.currentStage === "Cancelled") {
       setColor("#3CB2E4");
       setBackColor("#EBF7FC");
-      setFontWeight("600");
+      setFontWeight("700");
     }
 
     if (card.currentStage === "Negotiation") {
