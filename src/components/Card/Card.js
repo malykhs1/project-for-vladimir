@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 export const ClientCard = ({ card }) => {
   const [color, setColor] = useState("");
   const [backColor, setBackColor] = useState("");
+  const [fontWeight, setFontWeight] = useState("");
 
   const checkStatus = (card) => {
     if (card.currentStage === "Done") {
@@ -12,6 +13,7 @@ export const ClientCard = ({ card }) => {
     if (card.currentStage === "Cancelled") {
       setColor("#3CB2E4");
       setBackColor("#EBF7FC");
+      setFontWeight("600");
     }
 
     if (card.currentStage === "Negotiation") {
@@ -33,7 +35,13 @@ export const ClientCard = ({ card }) => {
       <div className="card">
         <div className="card__container">
           <div className="card__client-data-text">
-            <h2 className="card__client-title">{card.title}</h2>
+            {card.title === "Untitled" ? (
+              <h2 className="card__client-title card__client-title_untitled">
+                {card.title}
+              </h2>
+            ) : (
+              <h2 className="card__client-title">{card.title}</h2>
+            )}
             <p className="card__client-id">{card.clientID}</p>
           </div>
           <p className="card__client-address">{card.clientAddress}</p>
@@ -63,7 +71,11 @@ export const ClientCard = ({ card }) => {
                 Stage
               </p>
               <p
-                style={{ color: `${color}`, background: `${backColor}`}}
+                style={{
+                  color: `${color}`,
+                  fontWeight: `${fontWeight}`,
+                  background: `${backColor}`,
+                }}
                 className="card__stage-current"
               >
                 {card.currentStage}

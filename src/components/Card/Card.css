@@ -36,6 +36,14 @@
   white-space: nowrap;
 }
 
+.card__client-title_untitled {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.2727275788784027px;
+  color: #2d2d2d;
+}
+
 .card__client-id {
   font-size: 12px;
   font-weight: 400;

@@ -17,7 +17,7 @@ export const CardList = () => {
   }, []);
 
   const filteredCustomers = customersData.filter((customer) => {
-    if (inputValue.length > 2) {
+    if (inputValue.length > 1) {
       return (
         customer.title.toLowerCase().includes(inputValue.toLowerCase()) ||
         customer.clientAddress.toLowerCase().includes(inputValue.toLowerCase())
@@ -58,15 +58,11 @@ export const CardList = () => {
         </div>
 
         <div className="client-card-list">
-          {filteredCustomers.length > 0 ? (
-            <div className="card-list">
-              {filteredCustomers.map((card) => (
-                <ClientCard key={card.clientID} card={card} />
-              ))}
-            </div>
-          ) : (
-            <div className="card-list__text">Not found</div>
-          )}
+          <div className="card-list">
+            {filteredCustomers.map((card) => (
+              <ClientCard key={card.clientID} card={card} />
+            ))}
+          </div>
         </div>
       </div>
     </>
